@@ -50,7 +50,6 @@ public class LblPnl extends JPanel{
             @Override
             public void actionPerformed(ActionEvent ae) {
                 listener.onBtnClick();
-                //solve.setEnabled(false);
             }
         });
         

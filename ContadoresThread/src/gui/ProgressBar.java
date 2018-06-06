@@ -7,6 +7,7 @@ package gui;
 
 import hilos.Contador;
 import hilos.Semaforo;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
@@ -36,6 +37,7 @@ public class ProgressBar extends JPanel{
         pg.setPreferredSize(new Dimension(400,30));
         pg.setValue(0);    
         pg.setStringPainted(true);    
+        pg.setBackground(Color.WHITE);
         
         String contenido = String.valueOf(descanso);
         contenido = contenido.concat("s");
@@ -43,7 +45,7 @@ public class ProgressBar extends JPanel{
         lblVelocidad.setFont(fuente);
         
         
-        super.add(lblVelocidad);
+        //super.add(lblVelocidad);
         super.add(pg);
         
         cont = new Contador(sem, pg, posicion, descanso);

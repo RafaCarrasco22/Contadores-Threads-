@@ -7,6 +7,7 @@ package gui;
 
 import hilos.Semaforo;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -33,6 +34,7 @@ public class PrincipalFrame extends JFrame{
         super.setSize(new Dimension(450,400));
         super.setLayout(new FlowLayout());
         super.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        super.setBackground(Color.GRAY);
         
         pnl = new LblPnl();
         pnl.setListener(new ListenerLbl() {
